@@ -9,19 +9,25 @@ function hello() {
 function App() {
     return (
         <div>
-            This is APP component
+            <AppTitle/>
             <Rating/>
             <Accordion/>
         </div>
     );
 }
 
+function AppTitle() {
+    return (
+        <div>
+            This is App component
+        </div>
+    )
+}
+
 
 function Rating() {
     return (
         <div>
-            <Star/>
-            <Star/>
             <Star/>
             <Star/>
         </div>
@@ -39,7 +45,24 @@ function Star() {
 function Accordion() {
     return (
         <div>
+            <AccordionTitle/>
+            <AccordionBody/>
+
+        </div>
+    )
+}
+
+function AccordionTitle() {
+    return (
+        <div>
             <h3>Menu</h3>
+        </div>
+    )
+}
+
+function AccordionBody() {
+    return (
+        <div>
             <ul>
                 <li>1</li>
                 <li>2</li>
