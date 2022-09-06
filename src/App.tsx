@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Accordion from "./components/Accordion/Accordion";
+import Rating from "./Rating/Rating";
 
 function hello() {
     alert('Hello IT-Kamasutra')
@@ -8,69 +10,30 @@ function hello() {
 
 function App() {
     return (
+
         <div>
-            <AppTitle/>
-            <Rating/>
-            <Accordion/>
+            <PageTitle title={"This is App component"}/>
+            <PageTitle title={"My friends"}/>
+            <div>Article 1</div>
+            <Rating value={1}/>
+            <Accordion title={'Im a one'}/>
+            <Accordion title={'Im a MAN'}/>
+            <div>Article 2</div>
+            <Rating value={2}/>
+            <Rating value={3}/>
+            <Rating value={4}/>
+            <Rating value={5}/>
+            <Rating value={0}/>
         </div>
     );
 }
 
-function AppTitle() {
+function PageTitle(props: any) {
     return (
-        <div>
-            This is App component
-        </div>
+        <h1>{props.title}</h1>
     )
 }
 
-
-function Rating() {
-    return (
-        <div>
-            <Star/>
-            <Star/>
-        </div>
-    )
-}
-
-function Star() {
-    return (
-        <div>
-            <div>STAR</div>
-        </div>
-    )
-}
-
-function Accordion() {
-    return (
-        <div>
-            <AccordionTitle/>
-            <AccordionBody/>
-
-        </div>
-    )
-}
-
-function AccordionTitle() {
-    return (
-        <div>
-            <h3>Menu</h3>
-        </div>
-    )
-}
-
-function AccordionBody() {
-    return (
-        <div>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-    )
-}
 
 export default App;
 
