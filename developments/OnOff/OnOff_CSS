@@ -1,0 +1,17 @@
+.clicker {
+    background-color: green;
+}
+.regid {
+    background-color: white;
+}
+
+.end {
+    background-color: red;
+}
+
+.circleOn {
+    background: green;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}

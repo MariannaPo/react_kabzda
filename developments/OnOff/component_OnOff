@@ -1,0 +1,57 @@
+//import React from "react";
+//import "./OnOff.css"
+
+type OnOffPropsType = {
+    click: boolean
+    block: boolean
+}
+
+function OnOff(props: OnOffPropsType) {
+    return (
+        <div>
+            <On click={props.click}/>
+            <Off click={props.block}/>
+        </div>
+    )
+}
+
+type OnPropsType = {
+    click: boolean
+}
+
+function On(props: OnPropsType) {
+    if (props.click === true) {
+        return (
+            <button className={'clicker'}>ON</button>
+        )
+    } else {
+        return (
+            <button className="regid">ON</button>
+        )
+    }
+}
+
+type OffPropsType = {
+    click: boolean
+}
+
+function Off(props: OffPropsType) {
+    if (props.click === true) {
+        return (
+            <button className={'end'}>OFF</button>
+        )
+    } else {
+        return (
+            <button className="regid">OFF</button>
+        )
+    }
+}
+
+// type CirclePropsType = {
+//     buttonOn:()=>{}
+// }
+//
+// function Circle (props: CirclePropsType) {
+//     if (props.buttonOn)
+// }
+
