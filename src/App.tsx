@@ -3,6 +3,7 @@ import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import Rating from "./components/Rating/Rating";
 import OnOff from "./components/OnOff/OnOff";
+import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 
 // function hello() {
 //     alert('Hello IT-Kamasutra')
@@ -19,8 +20,8 @@ function App() {
             {/*<PageTitle title={"This is App component"}/>*/}
             {/*<PageTitle title={"My friends"}/>*/}
             {/*<div>Article 1</div>*/}
-            {/*<Accordion titleValue={'Menu'} collapsed={true}/>*/}
-            {/*<Accordion titleValue={'Users'} collapsed={true}/>*/}
+            <UncontrolledAccordion titleValue={'Menu'} />
+            <UncontrolledAccordion titleValue={'Users'} />
             {/*<div>Article 2</div>*/}
             {/*<Rating value={0}/>*/}
             {/*<Rating value={1}/>*/}
