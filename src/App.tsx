@@ -14,23 +14,18 @@ import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRati
 function App() {
     return (
 
-        <div>
+        <div className={'App'}>
             <OnOff />
             <OnOff />
             <OnOff />
             <UncontrolledRating />
+            <Rating value={3}/>
             {/*<PageTitle title={"This is App component"}/>*/}
             {/*<PageTitle title={"My friends"}/>*/}
             {/*<div>Article 1</div>*/}
             <UncontrolledAccordion titleValue={'Menu'} />
             <UncontrolledAccordion titleValue={'Users'} />
             {/*<div>Article 2</div>*/}
-            {/*<UncontrolledRating value={0}/>*/}
-            {/*<UncontrolledRating value={1}/>*/}
-            {/*<UncontrolledRating value={2}/>*/}
-            {/*<UncontrolledRating value={3}/>*/}
-            {/*<UncontrolledRating value={4}/>*/}
-            {/*<UncontrolledRating value={5}/>*/}
         </div>
     );
 }
