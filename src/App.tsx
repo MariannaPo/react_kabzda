@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
 import Rating, {RatingValueType} from "./components/Rating/Rating";
-import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRating";
 
 // function hello() {
@@ -18,6 +17,7 @@ function App() {
         <div className={'App'}>
 
             <Rating value={ratingValue} onClick={setRatingValue}/>
+            <UncontrolledRating/>
 
 
             {/*<PageTitle title={"This is App component"}/>*/}
