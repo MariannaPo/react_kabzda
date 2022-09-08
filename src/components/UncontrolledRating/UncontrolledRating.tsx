@@ -42,11 +42,15 @@ type StarPropsType = {
 }
 
 function Star(props: StarPropsType) {
-    if (props.selected === true) {
-        return <span> <b>STAR</b> </span>
-    } else {
-        return <span>STAR </span>
-    }
+    return (
+        props.selected ?  <span> <b>STAR</b> </span> : <span>STAR </span>
+)
 }
+//     if (props.selected === true) {
+//         return <span> <b>STAR</b> </span>
+//     } else {
+//         return <span>STAR </span>
+//     }
+// }
 
 export default UncontrolledRating;
