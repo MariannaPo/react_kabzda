@@ -1,12 +1,12 @@
 //import React from "react";
-//import "./OnOff.css"
+//import "./UncontrolledOnOff.css"
 
 type OnOffPropsType = {
     click: boolean
     block: boolean
 }
 
-function OnOff(props: OnOffPropsType) {
+function UncontrolledOnOff(props: OnOffPropsType) {
     return (
         <div>
             <On click={props.click}/>

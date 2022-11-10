@@ -35,3 +35,13 @@ function Star(props: StarPropsType) {
 }
 
 export default Rating;
+
+
+
+
+
+
+
+
+
+
