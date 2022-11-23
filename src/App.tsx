@@ -5,6 +5,7 @@ import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRati
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import UncontrolledOnOff from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import Accordion from "./components/Accordion/Accordion";
+import OnOff from "./components/OnOff/OnOff";
 // function hello() {
 //     alert('Hello IT-Kamasutra')
 // }
@@ -13,16 +14,19 @@ import Accordion from "./components/Accordion/Accordion";
 function App() {
 
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0);
-    let [accordionCollapsed, setAccordionCollapsed] = useState(false)
+    let [accordionCollapsed, setAccordionCollapsed] = useState(false);
+    let [switchOn, setSwitchOn] = useState(false)
 
     return (
 
         <div className={'App'}>
             <Accordion titleValue={"Menu"} collapsed={accordionCollapsed} onChange={() => {setAccordionCollapsed(!accordionCollapsed)}} />
-
-            <Rating value={ratingValue} onClick={setRatingValue}/>
-            <UncontrolledRating/>
-            <UncontrolledAccordion titleValue={'Menu'}/>
+            <OnOff on={switchOn} onChange={(on)=>{setSwitchOn(on)}}/>
+            <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
+            <UncontrolledAccordion titleValue={'fkflokf'}/>
+            {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
+            {/*<UncontrolledRating/>*/}
+            {/*<UncontrolledAccordion titleValue={'Menu'}/>*/}
 
 
             {/*<PageTitle title={"This is App component"}/>*/}
