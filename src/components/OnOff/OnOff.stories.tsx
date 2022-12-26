@@ -4,7 +4,7 @@ import {action} from "@storybook/addon-actions";
 import OnOff from "./OnOff";
 
 export default {
-    title: 'Rating stories',
+    title: 'OnOff stories',
     component: OnOff,
 };
 

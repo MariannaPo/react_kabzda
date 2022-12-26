@@ -6,7 +6,7 @@ type PropsType = {
 }
 
 
-function UncontrolledOnOff(props: PropsType) {
+export function UncontrolledOnOff(props: PropsType) {
 
     let [on, setOn]=useState(false);
 
